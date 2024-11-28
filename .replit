@@ -1,0 +1,26 @@
+hidden = ["target", ".cargo"]
+
+entrypoint = "src/main.rs"
+modules = ["rust-stable"]
+
+[nix]
+channel = "stable-24_05"
+
+[gitHubImport]
+requiredFiles = [".replit"]
+
+[[ports]]
+localPort = 9944
+externalPort = 3000
+
+[[ports]]
+localPort = 30333
+externalPort = 80
+
+[[ports]]
+localPort = 34273
+externalPort = 3002
+
+[[ports]]
+localPort = 40761
+externalPort = 3001
